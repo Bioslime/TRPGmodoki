@@ -13,7 +13,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'mamono.apps.MamonoConfig',
+    'character.apps.CharacterConfig',
+    'battle.apps.BattleConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

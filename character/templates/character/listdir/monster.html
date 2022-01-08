@@ -1,0 +1,18 @@
+{% extends "character/listdir/datalist.html" %}
+{% load widget_tweaks %}
+{% load static %}
+{% block list %}
+
+{% if  item.picture != 'defo' %}
+    <img src="{{ item.picture.url }}" class="col-6 rounded float-right img-fluid">
+    <ul class="list-group col-6">
+{% else %}
+    <ul class="list-group col-12">
+{% endif %}
+    <li class="list-group-item">{{ item.name }}</li>
+    <li class="list-group-item">HP : {{ item.HP}}</li>
+    <li class="list-group-item">MP : {{ item.MP }}</li>
+    <li class="list-group-item">スキル : {{ item.skill1.skill_name }} </li>
+</ul>
+
+{% endblock %}

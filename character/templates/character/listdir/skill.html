@@ -1,0 +1,11 @@
+{% extends "character/listdir/datalist.html" %}
+{% load widget_tweaks %}
+{% load static %}
+{% block list %}
+
+<ul class="list-group col-12">
+    <li class="list-group-item">{{ item.skill_name }}</li>
+    <li class="list-group-item">攻撃力 : {{ item.skill_attack}}</li>
+</ul>
+
+{% endblock %}
