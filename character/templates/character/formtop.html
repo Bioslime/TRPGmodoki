@@ -1,0 +1,14 @@
+{% extends "character/base.html" %}
+{% load widget_tweaks %}
+{% load static %}
+{% block content %}
+
+{% for key, value in formurl.items %}
+    <div class="row">
+        <div class="col-4 offset-md-4">
+            <a href="{{ key }}"> {{ value }} </a>
+        </div>
+    </div>
+{% endfor %}
+
+{% endblock %}

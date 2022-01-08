@@ -1,0 +1,11 @@
+{% extends "character/listdir/datalist.html" %}
+{% load widget_tweaks %}
+{% load static %}
+{% block list %}
+
+<ul class="list-group col-12">
+    <li class="list-group-item">{{ item.race_name }}</li>
+    <li class="list-group-item">種族スキル : {{ item.race_skill}}</li>
+</ul>
+
+{% endblock %}
