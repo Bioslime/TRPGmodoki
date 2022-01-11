@@ -1,5 +1,4 @@
-from django.urls.base import reverse
-from django.views.generic import CreateView, TemplateView, UpdateView
+from django.views.generic import CreateView, TemplateView
 from django.contrib import messages
 from django.urls import reverse_lazy
 from..forms import MonsterRegisterForm, SkillRegisterForm, RaceRegisterForm, YushaRegisterForm

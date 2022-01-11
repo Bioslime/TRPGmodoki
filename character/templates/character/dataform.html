@@ -31,9 +31,14 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row my-1 ">
         <div class="col-4">
-            <a class="" href="{% url redirect_url %}">{{ redirect_tag }}に戻る</a>
+            <a class="" href="{% url redirect_url %}">{{ redirect_tag }}へ</a>
+        </div>
+    </div>
+    <div class="row my-1 mb-4">
+        <div class="col-4">
+            <a class="" href="{% url 'character:form' %}">データ登録TOPへ</a>
         </div>
     </div>
 </div>

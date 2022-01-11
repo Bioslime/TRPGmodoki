@@ -2,13 +2,17 @@
 {% load widget_tweaks %}
 {% load static %}
 {% block content %}
-
-{% for key, value in listurl.items %}
-    <div class="row">
-        <div class="col-4 offset-md-4">
-            <a href="{{ key }}"> {{ value }} </a>
-        </div>
+<div class="row">
+    <div class="col mb-2">
+        <h2>データリストTOP</h2>
     </div>
-{% endfor %}
+</div>
+<div class="row">
+    {% for key, value in listurl.items %}
+    <div class="card col-6 m-auto text-center">
+        <a class="card-body" href="{{ key }}"> {{ value }} 一覧</a>
+    </div>
+    {% endfor %}
+</div>
 
 {% endblock %}
