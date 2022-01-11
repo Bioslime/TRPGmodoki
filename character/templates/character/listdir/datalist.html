@@ -12,9 +12,12 @@
                 <div class="card-body">
                     {% block list %}{% endblock %}
                 </div>
-                <a class="btn btn-secondary" href="{% url change_url item.pk %}">データ変更</a>
+                <a class="btn btn-secondary mb-1" href="{% url change_url item.pk %}">データ変更</a>
             </div>
         {% endfor %}
+    </div>
+    <div class="row my-2 mb-4">
+        <a class="col" href="{% url 'character:listtop' %}"> データリストTOP </a>
     </div>
 </div>
 

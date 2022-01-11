@@ -13,6 +13,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'testapp.apps.TestappConfig',
     'character.apps.CharacterConfig',
     'battle.apps.BattleConfig',
     'django.contrib.admin',
@@ -132,3 +133,10 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
+
+STATIC_DIR = Path.joinpath(BASE_DIR, 'static')
+
+STATIC_URL = "/static/"
+STATICFILES_DIRS = [
+    STATIC_DIR,
+]
