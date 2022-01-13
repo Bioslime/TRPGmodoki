@@ -13,7 +13,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'testapp.apps.TestappConfig',
     'character.apps.CharacterConfig',
     'battle.apps.BattleConfig',
     'django.contrib.admin',
