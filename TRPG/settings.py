@@ -13,7 +13,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'testapp.apps.TestappConfig',
+    'apiapp.apps.ApiappConfig',
+    'rest_framework',
     'character.apps.CharacterConfig',
     'battle.apps.BattleConfig',
     'django.contrib.admin',
@@ -140,3 +141,5 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
