@@ -14,6 +14,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'apiapp.apps.ApiappConfig',
+    'rest_framework',
     'character.apps.CharacterConfig',
     'battle.apps.BattleConfig',
     'django.contrib.admin',
@@ -30,7 +31,6 @@ INSTALLED_APPS = [
     'allauth.socialaccount', 
     'django_cleanup.apps.CleanupConfig',
     'sorl.thumbnail', 
-    'rest_framework',
     'markdownx',
 ]
 

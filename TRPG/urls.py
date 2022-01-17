@@ -8,4 +8,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('character.urls')),
     path("api/", include('apiapp.apiurls')),
+    path('battle/', include('battle.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) +  staticfiles_urlpatterns()

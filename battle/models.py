@@ -1,3 +1,3 @@
-from django.db import models
-
-# Create your models here.
+import sys
+sys.path.append("../")
+from character.models import MonsterModels, YushaModels

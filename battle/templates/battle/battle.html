@@ -1,0 +1,14 @@
+{% extends "character/base.html" %}
+{% load widget_tweaks %}
+{% load static %}
+{% block content %}
+
+<div class="cow">
+    {% for monster in monster_list %}
+    <div class="col">
+        <p> {{ monster.name }} </p>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
